@@ -9,12 +9,17 @@ import java.util.concurrent.TimeUnit;
 public class Q44234633 {
   public static void main(String[] args) throws InterruptedException {
     Observable.interval(50, TimeUnit.MILLISECONDS)
-        .takeWhile(l -> l < 400)
+        .takeWhile(l -> l < 8)
         .observeOn(Schedulers.io())
         .filter(l -> isConditionTrue(l))
         .observeOn(Schedulers.computation())
+        
         .firstElement()
         .doOnSuccess(System.out::println)
+        .switchIfEmpty(o -> o.onSuccess(-1L))
+        .isEmpty()
+        .filter(empty -> empty)
+        .doOnSuccess(b -> System.out.println("TimeOut"))
         .blockingGet();
   }
 
