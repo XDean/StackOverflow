@@ -13,7 +13,6 @@ public class Q44881419 {
     Boolean[] bs = new Boolean[1];
     System.out.println(os.getClass().isAssignableFrom(bs.getClass()));
     System.out.println(bs.getClass().isAssignableFrom(os.getClass()));
-    System.out.println(bs.getClass().getGenericSuperclass());
     List<Observable<Boolean>> memberObservables = new ArrayList<>();
     Observable.zip(memberObservables, new Function<Object[], Boolean>() {
       @Override
