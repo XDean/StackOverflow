@@ -33,6 +33,8 @@
 		</attributes>
 		<accessrules>
 			<accessrule kind="accessible" pattern="javafx/**"/>
+			<accessrule kind="accessible" pattern="com/sun/**"/>
+			<accessrule kind="accessible" pattern="sun/**"/>
 		</accessrules>
 	</classpathentry>
 	<classpathentry kind="con" path="org.jetbrains.kotlin.core.KOTLIN_CONTAINER">
