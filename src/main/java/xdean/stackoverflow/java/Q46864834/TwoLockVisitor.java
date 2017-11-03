@@ -22,7 +22,7 @@ public class TwoLockVisitor<A extends Lockable, B extends Lockable> {
     return this;
   }
 
-  public TwoLockVisitor<A, B> unlockBoth() {
+  public TwoLockVisitor<A, B> unlock() {
     left.unlock();
     right.unlock();
     return this;
