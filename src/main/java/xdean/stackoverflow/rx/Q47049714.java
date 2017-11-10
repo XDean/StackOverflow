@@ -41,7 +41,7 @@ public class Q47049714 {
     UserRepository userRepository = new UserRepository();
 
     public Observable<CheckInResult> checkIn() {
-      return Observable.create(subscriber -> {
+      return Observable.unsafeCreate(subscriber -> {
         Subscription subscription = new BooleanSubscription();
         shopRepository
             .checkIn()

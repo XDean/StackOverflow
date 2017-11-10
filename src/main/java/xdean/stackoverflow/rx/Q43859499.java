@@ -6,7 +6,7 @@ import rx.Observable;
 
 public class Q43859499 {
   public static void main(String[] args) {
-    Observable.create(s -> {
+    Observable.unsafeCreate(s -> {
       System.out.println("subscribing");
       s.onNext("123");
       s.onError(new RuntimeException("always fails"));
