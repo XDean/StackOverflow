@@ -1,3 +1,5 @@
+package xdean.stackoverflow.kotlin
+
 fun parse(string: String?): LibObject? {
 	fun String.parseMe() = SomeJavaLibrary.parse(this)
 	return string?.parseMe()

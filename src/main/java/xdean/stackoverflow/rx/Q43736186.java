@@ -1,11 +1,11 @@
 package xdean.stackoverflow.rx;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import lombok.Value;
 import rx.Observable;
 import xdean.jex.extra.Pair;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Q43736186 {
   public static void main(String[] args) {
