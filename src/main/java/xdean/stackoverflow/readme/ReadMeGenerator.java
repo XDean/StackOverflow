@@ -1,4 +1,6 @@
-package xdean.stackoverflow;
+package xdean.stackoverflow.readme;
+
+import static xdean.jex.util.log.LogUtil.log;
 
 import java.io.IOException;
 import java.net.URL;
@@ -77,7 +79,7 @@ public class ReadMeGenerator {
             }
           });
     } catch (Exception e) {
-      e.printStackTrace();
+      log().error(e.getMessage(), e);
       return Optional.empty();
     }
   }
