@@ -16,7 +16,7 @@ val MD_TEMPLATE: String = "[%s](https://stackoverflow.com/questions/%d) ([view c
 
 class Question(path: Path) : Comparable<Question> {
 	val id = path.toQuestionId()
-	val title = getTitleFromNetwork(id).map({ it.resolveASCII() }).orElse("Question can't found")
+	val title = getTitleFromNetwork(id).map({ it.resolveASCII() }).orElse("Question $id can't found")
 	val path: Path = path
 	val category = Observable.fromIterable(path)
 			.skip(5)

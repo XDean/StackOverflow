@@ -33,11 +33,10 @@ fun main(args: Array<String>) {
 			}
 			.reduce(ReadMeWriter()) { t, q -> t.add(q) }
 			.toObservable()
-			.doOnNext(::println)
 			.blockingForEach { it.writeTo(README) }
 }
 
 fun Path.shouldTraverse(): Boolean = Files.isDirectory(this) && !this.isQuestion()
 
-fun Path.isQuestion(): Boolean = this.getFileName().toString().matches(Regex("Q[0-9]+(\\.(java)|(kt))?"))
+fun Path.isQuestion(): Boolean = this.getFileName().toString().matches(Regex("Q[0-9]+(\\.((java)|(kt)))?"))
 
