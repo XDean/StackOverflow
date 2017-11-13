@@ -35,21 +35,6 @@ fun main(args: Array<String>) {
 			.toObservable()
 			.doOnNext(::println)
 			.blockingForEach { it.writeTo(README) }
-//	Arrays.stream(ROOT)
-//			.forEach({ root ->
-//				Traverse.preOrderTraversal<Path>(root)
-//				{
-//					if (it.shouldTraverse()) Try.to<Iterable<Path>>({ Files.newDirectoryStream(it) }).getOrElse(emptyList())
-//					else emptyList()
-//				}
-//						.filter({ it.isQuestion() })
-//						.flatMap({ Flowable.just(it).map(::Question).subscribeOn(scheduler) })
-//						.doOnNext(::println)
-//						.reduce(ReadMeWriter()) { t, q -> t.add(q) }
-//						.toObservable()
-//						.doOnNext(::println)
-//						.blockingForEach { it.writeTo(README) }
-//			})
 }
 
 fun Path.shouldTraverse(): Boolean = Files.isDirectory(this) && !this.isQuestion()

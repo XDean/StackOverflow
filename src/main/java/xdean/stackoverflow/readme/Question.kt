@@ -24,7 +24,7 @@ class Question(path: Path) : Comparable<Question> {
 			.map(Path::toString)
 			.toList()
 			.blockingGet()
-	val markdown = String.format(MD_TEMPLATE, title, id, path)
+	val markdown = String.format(MD_TEMPLATE, title, id, path.toString().replace('\\', '/'))
 
 	override fun toString(): String = "Question [id=" + id + ", title=" + title + ", path=" + path + "]"
 

@@ -28,11 +28,11 @@ class ReadMeWriter {
 
 	fun QuestionTree.writeTo(ps: PrintStream, space: Int) {
 		this.subTrees.forEach { name, subTree ->
-			ps.println(" " * space + "- $name")
+			ps.println("  " * space + "- $name")
 			subTree.writeTo(ps, space + 1);
 		}
 		this.questions.forEach {
-			ps.println(" " * space + "- ${it.markdown}")
+			ps.println("  " * space + "- ${it.markdown}")
 		}
 	}
 
