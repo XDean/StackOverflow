@@ -10,26 +10,46 @@ import java.nio.file.Paths
 import java.util.Arrays
 import java.util.Collections
 import xdean.jex.util.task.tryto.Try
+import io.reactivex.rxkotlin.toFlowable
 
 val ROOT = arrayOf(
 		Paths.get("src", "main", "java"),
 		Paths.get("src", "main", "kotlin"))
+val README = Paths.get("README.md")
 
 fun main(args: Array<String>) {
+	assert(Files.exists(README))
 	val scheduler = RxSchedulers.fixedSize(10)
-	Arrays.stream(ROOT)
-			.forEach({ root ->
-				Traverse.preOrderTraversal<Path>(root)
+	ROOT.toFlowable()
+			.flatMap {
+				Traverse.preOrderTraversal<Path>(it)
 				{
-					if (it.shouldTraverse())
-						Try.to<Iterable<Path>>({ Files.newDirectoryStream(it) }).getOrElse(emptyList())
-					else
-						emptyList()
+					if (it.shouldTraverse()) Try.to<Iterable<Path>>({ Files.newDirectoryStream(it) }).getOrElse(emptyList())
+					else emptyList()
 				}
 						.filter({ it.isQuestion() })
 						.flatMap({ Flowable.just(it).map(::Question).subscribeOn(scheduler) })
-						.blockingSubscribe({ println("${it.category}\t${it.markdown}") })
-			})
+						.doOnNext(::println)
+			}
+			.reduce(ReadMeWriter()) { t, q -> t.add(q) }
+			.toObservable()
+			.doOnNext(::println)
+			.blockingForEach { it.writeTo(README) }
+//	Arrays.stream(ROOT)
+//			.forEach({ root ->
+//				Traverse.preOrderTraversal<Path>(root)
+//				{
+//					if (it.shouldTraverse()) Try.to<Iterable<Path>>({ Files.newDirectoryStream(it) }).getOrElse(emptyList())
+//					else emptyList()
+//				}
+//						.filter({ it.isQuestion() })
+//						.flatMap({ Flowable.just(it).map(::Question).subscribeOn(scheduler) })
+//						.doOnNext(::println)
+//						.reduce(ReadMeWriter()) { t, q -> t.add(q) }
+//						.toObservable()
+//						.doOnNext(::println)
+//						.blockingForEach { it.writeTo(README) }
+//			})
 }
 
 fun Path.shouldTraverse(): Boolean = Files.isDirectory(this) && !this.isQuestion()

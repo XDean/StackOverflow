@@ -6,21 +6,35 @@ import java.nio.file.Files
 import java.nio.file.Path
 import java.util.LinkedList
 import io.reactivex.Observable
+import xdean.jex.util.string.StringUtil
+import lombok.ToString
+
+val HEAD: String = "# StackOverflow\nMy answers on Stack Overflow\n"
 
 class ReadMeWriter {
-	var questions = LinkedList<Question>()
+	var questions = QuestionTree()
 
-	fun add(question: Question) = questions.add(question)
+	fun add(question: Question): ReadMeWriter {
+		questions.addQuestion(question)
+		return this;
+	}
 
 	@Throws(IOException::class)
 	fun writeTo(path: Path) {
 		val ps = PrintStream(Files.newOutputStream(path))
 		ps.println(HEAD)
-		Observable.fromIterable(questions)
-// 	.groupBy(keySelector)
+		questions.writeTo(ps, 0)
 	}
 
-	companion object {
-		val HEAD: String = "# StackOverflow\nMy answers on Stack Overflow\n"
+	fun QuestionTree.writeTo(ps: PrintStream, space: Int) {
+		this.subTrees.forEach { name, subTree ->
+			ps.println(" " * space + "- $name")
+			subTree.writeTo(ps, space + 1);
+		}
+		this.questions.forEach {
+			ps.println(" " * space + "- ${it.markdown}")
+		}
 	}
+
+	operator fun String.times(time: Int) = StringUtil.repeat(this, time)
 }

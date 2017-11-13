@@ -7,10 +7,8 @@ import java.util.TreeMap
 class QuestionTree {
 	val subTrees = TreeMap<String, QuestionTree>(Comparator.naturalOrder())
 	val questions = LinkedList<Question>()
-	fun addQuestion(q: Question): QuestionTree {
-		addQuestion(q, 0)
-		return this
-	}
+
+	infix fun addQuestion(q: Question) = addQuestion(q, 0)
 
 	private fun addQuestion(q: Question, step: Int) {
 		val category = q.category
