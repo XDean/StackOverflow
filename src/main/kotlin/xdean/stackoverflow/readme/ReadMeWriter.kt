@@ -31,7 +31,7 @@ class ReadMeWriter {
 			ps.println("  " * space + "- $name")
 			subTree.writeTo(ps, space + 1);
 		}
-		this.questions.forEach {
+		this.questions.stream().sorted().forEach {
 			ps.println("  " * space + "- ${it.markdown}")
 		}
 	}
