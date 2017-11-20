@@ -24,10 +24,15 @@ fun main(args: Array<String>) {
 			.flatMap {
 				Traverse.preOrderTraversal<Path>(it)
 				{
-					if (it.shouldTraverse()) Try.to<Iterable<Path>>({ Files.newDirectoryStream(it) }).getOrElse(emptyList())
-					else emptyList()
+					if (it.shouldTraverse)
+						try {
+							Files.newDirectoryStream(it)
+						} catch(e: Exception) {
+							emptyList<Path>()
+						}
+					else emptyList<Path>()
 				}
-						.filter({ it.isQuestion() })
+						.filter({ it.isQuestion })
 						.flatMap({ Flowable.just(it).map(::Question).subscribeOn(scheduler) })
 						.doOnNext(::println)
 			}
@@ -36,7 +41,7 @@ fun main(args: Array<String>) {
 			.blockingForEach { it.writeTo(README) }
 }
 
-fun Path.shouldTraverse(): Boolean = Files.isDirectory(this) && !this.isQuestion()
+val Path.shouldTraverse: Boolean get() = Files.isDirectory(this) && !this.isQuestion
 
-fun Path.isQuestion(): Boolean = this.getFileName().toString().matches(Regex("Q[0-9]+(\\.((java)|(kt)))?"))
+val Path.isQuestion: Boolean get() = this.getFileName().toString().matches(Regex("Q[0-9]+(\\.((java)|(kt)))?"))
 
