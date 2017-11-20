@@ -44,3 +44,4 @@ My answers on Stack Overflow
   - [rx java - Combining 2 observables in RxJava in a given manner - Stack Overflow](https://stackoverflow.com/questions/47049788) ([view code](src/main/java/xdean/stackoverflow/rx/Q47049788.java))
   - [java - Executing Map of Observables - Stack Overflow](https://stackoverflow.com/questions/47057374) ([view code](src/main/java/xdean/stackoverflow/rx/Q47057374.java))
   - [java - RxJava Delay for Hot Observables - Stack Overflow](https://stackoverflow.com/questions/47157200) ([view code](src/main/java/xdean/stackoverflow/rx/Q47157200.java))
+  - [android - RxJava. Sequential execution - Stack Overflow](https://stackoverflow.com/questions/47264933) ([view code](src/main/java/xdean/stackoverflow/rx/Q47264933.java))
