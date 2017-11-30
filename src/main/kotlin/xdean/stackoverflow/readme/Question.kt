@@ -49,7 +49,7 @@ fun Path.toQuestionId(): Int = Integer.parseInt(FileUtil.getNameWithoutSuffix(th
 
 fun getTitle(id: Int): String =
 		SAVED_TITLE.getProperty(id.toString())
-				?: (
+				?: ((
 				try {
 					Resources.readLines(URL(QUESTION_URL + id), Charsets.UTF_8,
 							object : LineProcessor<String?> {
@@ -70,7 +70,7 @@ fun getTitle(id: Int): String =
 					null
 				}
 						?.resolveASCII()
-						?: "Question $id can't found"
+						?: "Question $id can't found")
 						.also {
 							SAVED_TITLE.setProperty(id.toString(), it)
 							SAVED_TITLE.store(Files.newOutputStream(SAVED_PATH), null)
