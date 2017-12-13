@@ -7,6 +7,7 @@ My answers on Stack Overflow
     - [java - Recursive usage of @Retention annotation , how is it possible? - Stack Overflow](https://stackoverflow.com/questions/47456209) ([view code](src/main/java/xdean/stackoverflow/java/annotation/Q47456209.java))
     - [android - Create custom java annotation in order to modify method - Stack Overflow](https://stackoverflow.com/questions/47541636) ([view code](src/main/java/xdean/stackoverflow/java/annotation/Q47541636))
   - reflection
+    - [reflection - Obtain java.lang.reflect.Executable of current or calling method? - Stack Overflow](https://stackoverflow.com/questions/44563354) ([view code](src/main/java/xdean/stackoverflow/java/reflection/Q44563354.java))
     - [java - Extract Class from Parameterized Interface using default method - Stack Overflow](https://stackoverflow.com/questions/46360416) ([view code](src/main/java/xdean/stackoverflow/java/reflection/Q46360416.java))
     - [java - How to get annotations from parent method? - Stack Overflow](https://stackoverflow.com/questions/46553516) ([view code](src/main/java/xdean/stackoverflow/java/reflection/Q46553516.java))
     - [java - Freeing memory wrapped with NewDirectByteBuffer - Stack Overflow](https://stackoverflow.com/questions/46844275) ([view code](src/main/java/xdean/stackoverflow/java/reflection/Q46844275.java))
