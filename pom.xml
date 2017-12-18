@@ -42,11 +42,21 @@
 			<artifactId>rxjava</artifactId>
 			<version>1.2.7</version>
 		</dependency>
-		<dependency>
-			<groupId>com.github.XDean</groupId>
-			<artifactId>JUnit-EX</artifactId>
-			<version>0.0.2</version>
-		</dependency>
+    <dependency>
+      <groupId>com.github.XDean</groupId>
+      <artifactId>JUnit-EX</artifactId>
+      <version>0.0.2</version>
+    </dependency>
+    <dependency>
+      <groupId>com.github.XDean</groupId>
+      <artifactId>AnnotationProcessorToolkit</artifactId>
+      <version>0.1.2</version>
+    </dependency>
+    <dependency>
+      <groupId>com.google.testing.compile</groupId>
+      <artifactId>compile-testing</artifactId>
+      <version>0.13</version>
+    </dependency>
 	</dependencies>
 	<build>
 		<plugins>

@@ -6,6 +6,7 @@ My answers on Stack Overflow
     - [reflection - Java get compile-time safe method name - Stack Overflow](https://stackoverflow.com/questions/34121544) ([view code](src/main/java/xdean/stackoverflow/java/annotation/Q34121544.java))
     - [java - Recursive usage of @Retention annotation , how is it possible? - Stack Overflow](https://stackoverflow.com/questions/47456209) ([view code](src/main/java/xdean/stackoverflow/java/annotation/Q47456209.java))
     - [android - Create custom java annotation in order to modify method - Stack Overflow](https://stackoverflow.com/questions/47541636) ([view code](src/main/java/xdean/stackoverflow/java/annotation/Q47541636))
+    - [Java Annotation Processor: check if TypeMirror implements specific generic interface - Stack Overflow](https://stackoverflow.com/questions/47553977) ([view code](src/main/java/xdean/stackoverflow/java/annotation/Q47553977.java))
   - reflection
     - [reflection - Obtain java.lang.reflect.Executable of current or calling method? - Stack Overflow](https://stackoverflow.com/questions/44563354) ([view code](src/main/java/xdean/stackoverflow/java/reflection/Q44563354.java))
     - [java - Extract Class from Parameterized Interface using default method - Stack Overflow](https://stackoverflow.com/questions/46360416) ([view code](src/main/java/xdean/stackoverflow/java/reflection/Q46360416.java))
