@@ -1,11 +1,10 @@
 package xdean.stackoverflow.rx;
 
-import lombok.Value;
-import rx.Observable;
-import xdean.jex.extra.Pair;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import rx.Observable;
+import xdean.jex.extra.Pair;
 
 public class Q43736186 {
   public static void main(String[] args) {
@@ -26,20 +25,40 @@ public class Q43736186 {
     return null;
   }
 
-  @Value
-  private static class Parent {
-    int id;
-    String name;
+  static class Parent {
+    final int id;
+    final String name;
+
+    public Parent(int id, String name) {
+      this.id = id;
+      this.name = name;
+    }
+
+    public int getId() {
+      return id;
+    }
   }
 
-  @Value
-  private static class Child {
-    int id;
-    String name;
+  static class Child {
+    final int id;
+    final String name;
+
+    public Child(int id, String name) {
+      this.id = id;
+      this.name = name;
+    }
+
   }
 
-  @Value
-  private static class Response<T> {
-    T value;
+  static class Response<T> {
+    final T value;
+
+    public Response(T value) {
+      this.value = value;
+    }
+
+    public T getValue() {
+      return value;
+    }
   }
 }

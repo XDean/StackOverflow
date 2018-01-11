@@ -2,8 +2,6 @@ package xdean.stackoverflow.rx;
 
 import java.util.concurrent.TimeUnit;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
 import rx.Observable;
 import rx.subjects.BehaviorSubject;
 
@@ -16,15 +14,6 @@ import rx.subjects.BehaviorSubject;
  * 4    2000  2900  900   3400  2000
  */
 public class Q47157200 {
-  @Data
-  @AllArgsConstructor
-  public static class Three<A, B, C> {
-    A a;
-    B b;
-    C c;
-    // Getter, Setter, Constructor
-  }
-
   public static void main(String[] args) throws Exception {
     BehaviorSubject<Integer> s = BehaviorSubject.create();
     // Three = (The value, upstream comes mills, downstream emits mills)
@@ -51,4 +40,41 @@ public class Q47157200 {
     s.onNext(6);
     Thread.sleep(1000);
   }
+
+  public static class Three<A, B, C> {
+    A a;
+    B b;
+    C c;
+
+    public Three(A a, B b, C c) {
+      this.a = a;
+      this.b = b;
+      this.c = c;
+    }
+
+    public A getA() {
+      return a;
+    }
+
+    public B getB() {
+      return b;
+    }
+
+    public C getC() {
+      return c;
+    }
+
+    public void setA(A a) {
+      this.a = a;
+    }
+
+    public void setB(B b) {
+      this.b = b;
+    }
+
+    public void setC(C c) {
+      this.c = c;
+    }
+  }
+
 }

@@ -8,10 +8,6 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.reflect.Field;
 import java.util.stream.Stream;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 import xdean.jex.util.reflect.ReflectUtil;
 
 public class Q46765735 {
@@ -54,13 +50,22 @@ public class Q46765735 {
   String second();
 }
 
-@Getter
-@Setter
-@AllArgsConstructor
-@NoArgsConstructor
 class Target {
   String first;
   String second;
+
+  public Target(String first, String second) {
+    this.first = first;
+    this.second = second;
+  }
+
+  public void setFirst(String first) {
+    this.first = first;
+  }
+
+  public void setSecond(String second) {
+    this.second = second;
+  }
 }
 
 class TargetDomain {
