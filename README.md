@@ -57,3 +57,4 @@ My answers on Stack Overflow
   - [java - Executing Map of Observables - Stack Overflow](https://stackoverflow.com/questions/47057374) ([view code](src/main/java/xdean/stackoverflow/rx/Q47057374.java))
   - [java - RxJava Delay for Hot Observables - Stack Overflow](https://stackoverflow.com/questions/47157200) ([view code](src/main/java/xdean/stackoverflow/rx/Q47157200.java))
   - [android - RxJava. Sequential execution - Stack Overflow](https://stackoverflow.com/questions/47264933) ([view code](src/main/java/xdean/stackoverflow/rx/Q47264933.java))
+  - [java - Hot(ish) Observable - Stack Overflow](https://stackoverflow.com/questions/49112023) ([view code](src/main/java/xdean/stackoverflow/rx/Q49112023.java))
