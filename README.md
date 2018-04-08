@@ -9,6 +9,8 @@ My answers on Stack Overflow
     - [Java Annotation Processor: check if TypeMirror implements specific generic interface - Stack Overflow](https://stackoverflow.com/questions/47553977) ([view code](src/main/java/xdean/stackoverflow/java/annotation/Q47553977.java))
     - [java - Getting information from Annotation processor at runtime - Stack Overflow](https://stackoverflow.com/questions/48177784) ([view code](src/main/java/xdean/stackoverflow/java/annotation/Q48177784.java))
     - [Java: how to simplify complicated annotations - Stack Overflow](https://stackoverflow.com/questions/48386072) ([view code](src/main/java/xdean/stackoverflow/java/annotation/Q48386072.java))
+    - [Question 49055141 can't found](https://stackoverflow.com/questions/49055141) ([view code](src/main/java/xdean/stackoverflow/java/annotation/Q49055141))
+    - [Question 49706464 can't found](https://stackoverflow.com/questions/49706464) ([view code](src/main/java/xdean/stackoverflow/java/annotation/Q49706464.java))
   - reflection
     - [reflection - Obtain java.lang.reflect.Executable of current or calling method? - Stack Overflow](https://stackoverflow.com/questions/44563354) ([view code](src/main/java/xdean/stackoverflow/java/reflection/Q44563354.java))
     - [java - Extract Class from Parameterized Interface using default method - Stack Overflow](https://stackoverflow.com/questions/46360416) ([view code](src/main/java/xdean/stackoverflow/java/reflection/Q46360416.java))
