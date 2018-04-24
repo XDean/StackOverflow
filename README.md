@@ -10,6 +10,7 @@ My answers on Stack Overflow
     - [java - Getting information from Annotation processor at runtime - Stack Overflow](https://stackoverflow.com/questions/48177784) ([view code](src/main/java/xdean/stackoverflow/java/annotation/Q48177784.java))
     - [Java: how to simplify complicated annotations - Stack Overflow](https://stackoverflow.com/questions/48386072) ([view code](src/main/java/xdean/stackoverflow/java/annotation/Q48386072.java))
     - [Java - Force a class implementing an interface to declare an annotation - Stack Overflow](https://stackoverflow.com/questions/49055141) ([view code](src/main/java/xdean/stackoverflow/java/annotation/Q49055141))
+    - [java - Prevent using specific annotation in project classes on compile time or at runtime - Stack Overflow](https://stackoverflow.com/questions/49706464) ([view code](src/main/java/xdean/stackoverflow/java/annotation/Q49706464.java))
   - reflection
     - [reflection - Obtain java.lang.reflect.Executable of current or calling method? - Stack Overflow](https://stackoverflow.com/questions/44563354) ([view code](src/main/java/xdean/stackoverflow/java/reflection/Q44563354.java))
     - [java - Extract Class from Parameterized Interface using default method - Stack Overflow](https://stackoverflow.com/questions/46360416) ([view code](src/main/java/xdean/stackoverflow/java/reflection/Q46360416.java))
@@ -59,3 +60,4 @@ My answers on Stack Overflow
   - [java - Executing Map of Observables - Stack Overflow](https://stackoverflow.com/questions/47057374) ([view code](src/main/java/xdean/stackoverflow/rx/Q47057374.java))
   - [java - RxJava Delay for Hot Observables - Stack Overflow](https://stackoverflow.com/questions/47157200) ([view code](src/main/java/xdean/stackoverflow/rx/Q47157200.java))
   - [android - RxJava. Sequential execution - Stack Overflow](https://stackoverflow.com/questions/47264933) ([view code](src/main/java/xdean/stackoverflow/rx/Q47264933.java))
+  - [java - Hot(ish) Observable - Stack Overflow](https://stackoverflow.com/questions/49112023) ([view code](src/main/java/xdean/stackoverflow/rx/Q49112023.java))
