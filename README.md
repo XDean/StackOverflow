@@ -9,6 +9,7 @@ My answers on Stack Overflow
     - [Java Annotation Processor: check if TypeMirror implements specific generic interface - Stack Overflow](https://stackoverflow.com/questions/47553977) ([view code](src/main/java/xdean/stackoverflow/java/annotation/Q47553977.java))
     - [java - Getting information from Annotation processor at runtime - Stack Overflow](https://stackoverflow.com/questions/48177784) ([view code](src/main/java/xdean/stackoverflow/java/annotation/Q48177784.java))
     - [Java: how to simplify complicated annotations - Stack Overflow](https://stackoverflow.com/questions/48386072) ([view code](src/main/java/xdean/stackoverflow/java/annotation/Q48386072.java))
+    - [Java - Force a class implementing an interface to declare an annotation - Stack Overflow](https://stackoverflow.com/questions/49055141) ([view code](src/main/java/xdean/stackoverflow/java/annotation/Q49055141))
   - reflection
     - [reflection - Obtain java.lang.reflect.Executable of current or calling method? - Stack Overflow](https://stackoverflow.com/questions/44563354) ([view code](src/main/java/xdean/stackoverflow/java/reflection/Q44563354.java))
     - [java - Extract Class from Parameterized Interface using default method - Stack Overflow](https://stackoverflow.com/questions/46360416) ([view code](src/main/java/xdean/stackoverflow/java/reflection/Q46360416.java))
@@ -22,6 +23,7 @@ My answers on Stack Overflow
   - [java - Is there a way to input 2 strings into 1 string and have them not effect each others input? - Stack Overflow](https://stackoverflow.com/questions/47028607) ([view code](src/main/java/xdean/stackoverflow/java/Q47028607.java))
   - [inheritance - Private Method overriding in java - Stack Overflow](https://stackoverflow.com/questions/47069297) ([view code](src/main/java/xdean/stackoverflow/java/Q47069297.java))
   - [java - How do I fill a 2D array with random integers [1,9] and print out a 2D array with sums of rows at each row and sum of columns at each column? - Stack Overflow](https://stackoverflow.com/questions/47129466) ([view code](src/main/java/xdean/stackoverflow/java/Q47129466.java))
+  - [How to write a java function to return array of dynamic type? - Stack Overflow](https://stackoverflow.com/questions/49997251) ([view code](src/main/java/xdean/stackoverflow/java/Q49997251.java))
 - kotlin
   - [Kotlin function with nullable/nonnull input mapped to nullable/nonnull output - Stack Overflow](https://stackoverflow.com/questions/44665611) ([view code](src/main/kotlin/xdean/stackoverflow/kotlin/Q44665611.kt))
 - rx
