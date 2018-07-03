@@ -11,6 +11,7 @@ My answers on Stack Overflow
     - [Java: how to simplify complicated annotations - Stack Overflow](https://stackoverflow.com/questions/48386072) ([view code](src/main/java/xdean/stackoverflow/java/annotation/Q48386072.java))
     - [Java - Force a class implementing an interface to declare an annotation - Stack Overflow](https://stackoverflow.com/questions/49055141) ([view code](src/main/java/xdean/stackoverflow/java/annotation/Q49055141))
     - [java - Prevent using specific annotation in project classes on compile time or at runtime - Stack Overflow](https://stackoverflow.com/questions/49706464) ([view code](src/main/java/xdean/stackoverflow/java/annotation/Q49706464.java))
+    - [Using Java annotations to generate some code within a method - Stack Overflow](https://stackoverflow.com/questions/50978487) ([view code](src/main/java/xdean/stackoverflow/java/annotation/Q50978487.java))
     - [Question 51145631 can't found](https://stackoverflow.com/questions/51145631) ([view code](src/main/java/xdean/stackoverflow/java/annotation/Q51145631.java))
   - reflection
     - [reflection - Obtain java.lang.reflect.Executable of current or calling method? - Stack Overflow](https://stackoverflow.com/questions/44563354) ([view code](src/main/java/xdean/stackoverflow/java/reflection/Q44563354.java))

@@ -5,7 +5,7 @@ import java.util.LinkedList
 import java.util.TreeMap
 
 class QuestionTree {
-	val subTrees = TreeMap<String, QuestionTree>(Comparator.naturalOrder())
+	val subTrees = TreeMap<String, QuestionTree>(String::compareTo)
 	val questions = LinkedList<Question>()
 
 	fun addQuestion(q: Question) = addQuestion(q, 0)
