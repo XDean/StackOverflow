@@ -29,6 +29,8 @@ My answers on Stack Overflow
   - [inheritance - Private Method overriding in java - Stack Overflow](https://stackoverflow.com/questions/47069297) ([view code](src/main/java/xdean/stackoverflow/java/Q47069297.java))
   - [java - How do I fill a 2D array with random integers [1,9] and print out a 2D array with sums of rows at each row and sum of columns at each column? - Stack Overflow](https://stackoverflow.com/questions/47129466) ([view code](src/main/java/xdean/stackoverflow/java/Q47129466.java))
   - [How to write a java function to return array of dynamic type? - Stack Overflow](https://stackoverflow.com/questions/49997251) ([view code](src/main/java/xdean/stackoverflow/java/Q49997251.java))
+- javapoet
+  - [java - Javapoet and generic class declarations - Stack Overflow](https://stackoverflow.com/questions/51915662) ([view code](src/main/java/xdean/stackoverflow/javapoet/Q51915662.java))
 - javassist
   - [java - Adding an annotation to a class using Javassist - Stack Overflow](https://stackoverflow.com/questions/50621480) ([view code](src/main/java/xdean/stackoverflow/javassist/Q50621480.java))
 - kotlin

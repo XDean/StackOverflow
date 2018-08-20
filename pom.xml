@@ -85,6 +85,11 @@
       <artifactId>auto-service</artifactId>
       <version>1.0-rc3</version>
     </dependency>
+    <dependency>
+      <groupId>com.squareup</groupId>
+      <artifactId>javapoet</artifactId>
+      <version>1.10.0</version>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
