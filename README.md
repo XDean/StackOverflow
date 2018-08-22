@@ -69,3 +69,5 @@ My answers on Stack Overflow
   - [java - RxJava Delay for Hot Observables - Stack Overflow](https://stackoverflow.com/questions/47157200) ([view code](src/main/java/xdean/stackoverflow/rx/Q47157200.java))
   - [android - RxJava. Sequential execution - Stack Overflow](https://stackoverflow.com/questions/47264933) ([view code](src/main/java/xdean/stackoverflow/rx/Q47264933.java))
   - [java - Hot(ish) Observable - Stack Overflow](https://stackoverflow.com/questions/49112023) ([view code](src/main/java/xdean/stackoverflow/rx/Q49112023.java))
+- spring
+  - [java - How to init custom annotation in spring - Stack Overflow](https://stackoverflow.com/questions/51956292) ([view code](src/main/java/xdean/stackoverflow/spring/Q51956292.java))
