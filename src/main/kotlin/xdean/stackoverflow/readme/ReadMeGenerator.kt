@@ -15,7 +15,7 @@ import io.reactivex.rxkotlin.toFlowable
 val ROOT = arrayOf(
 		Paths.get("src", "main", "java"),
 		Paths.get("src", "main", "kotlin"))
-val README = Paths.get("README.md")
+val README: Path = Paths.get("README.md")
 
 fun main(args: Array<String>) {
 	assert(Files.exists(README))
@@ -32,8 +32,8 @@ fun main(args: Array<String>) {
 						}
 					else emptyList<Path>()
 				}
-						.filter({ it.isQuestion })
-						.flatMap({ Flowable.just(it).map(::Question).subscribeOn(scheduler) })
+						.filter { it.isQuestion }
+						.flatMap { Flowable.just(it).map(::Question).subscribeOn(scheduler) }
 						.doOnNext(::println)
 			}
 			.reduce(ReadMeWriter()) { t, q -> t.add(q) }
@@ -43,5 +43,5 @@ fun main(args: Array<String>) {
 
 val Path.shouldTraverse: Boolean get() = Files.isDirectory(this) && !this.isQuestion
 
-val Path.isQuestion: Boolean get() = this.getFileName().toString().matches(Regex("Q[0-9]+(\\.((java)|(kt)))?"))
+val Path.isQuestion: Boolean get() = this.fileName.toString().matches(Regex("Q[0-9]+(\\.((java)|(kt)))?"))
 
