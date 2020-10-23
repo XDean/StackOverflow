@@ -12,9 +12,7 @@ object Q64374547 {
   case class Event(event: String, consumer: Int, timestamp: String)
 
   def main(args: Array[String]): Unit = {
-    val spark = SparkSession.builder().getOrCreate()
-    SparkSession.active
-    SparkSession.getActiveSession
+    val spark = SparkSession.builder().master("local[4]").getOrCreate()
 
     import spark.implicits._
 
@@ -53,5 +51,6 @@ object Q64374547 {
       .orderBy($"timestamp")))
       .withColumn("session_timestamp", to_timestamp(findSessionStartTime($"events")))
       .drop("events")
+      .show(false)
   }
 }
