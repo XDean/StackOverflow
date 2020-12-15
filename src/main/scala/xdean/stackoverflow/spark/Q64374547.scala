@@ -1,11 +1,11 @@
-package xdean.stackoverflow
+package xdean.stackoverflow.spark
 
-import _root_.java.text.SimpleDateFormat
-import _root_.java.util.Date
+import java.text.SimpleDateFormat
+import java.util.Date
 
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.expressions.Window
-import org.apache.spark.sql.functions._
+import org.apache.spark.sql.functions.{array, collect_list, to_timestamp, udf}
 
 object Q64374547 {
 

@@ -14,7 +14,8 @@ import io.reactivex.rxkotlin.toFlowable
 
 val ROOT = arrayOf(
 		Paths.get("src", "main", "java"),
-		Paths.get("src", "main", "kotlin"))
+		Paths.get("src", "main", "kotlin"),
+		Paths.get("src", "main", "scala"))
 val README: Path = Paths.get("README.md")
 
 fun main(args: Array<String>) {
@@ -43,5 +44,5 @@ fun main(args: Array<String>) {
 
 val Path.shouldTraverse: Boolean get() = Files.isDirectory(this) && !this.isQuestion
 
-val Path.isQuestion: Boolean get() = this.fileName.toString().matches(Regex("Q[0-9]+(\\.((java)|(kt)))?"))
+val Path.isQuestion: Boolean get() = this.fileName.toString().matches(Regex("Q[0-9]+(\\.((java)|(kt)|(scala)))?"))
 
