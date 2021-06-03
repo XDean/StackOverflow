@@ -20,7 +20,7 @@ import xdean.annotation.processor.toolkit.AssertException;
 import xdean.annotation.processor.toolkit.XAbstractProcessor;
 import xdean.annotation.processor.toolkit.annotation.SupportedAnnotation;
 
-@AutoService(Processor.class)
+//@AutoService(Processor.class)
 @SupportedAnnotation(After.class)
 @SupportedSourceVersion(SourceVersion.RELEASE_8)
 public class Q49706464 extends XAbstractProcessor {
